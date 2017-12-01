@@ -10,21 +10,58 @@
             background: url(images/timg.gif);
             background-size: cover;
           }
+          *{
+            box-sizing:border-box;
+          }
 
            h1{
            	padding-top: 30px;
            	padding-bottom: 30px;
            	font-family: 黑体;
-            background: rgba(255,255,255,0.5);
-            border-bottom:3px solid#000;
+            color:#fbfd5c;
+            text-shadow: 0px 0px 28px #fbfd5c;
            }
 
            .col-sm-6 .thumbnail{
              background:rgba(255,255,255,0.4);
              text-align: center;
            }
+          
+          .product{
+             /*background:rgba(255,255,255,0.6);*/
+             width:200px;
+             height: 100%;
+             position:fixed;
+             right: 0;
+             top:0;
+             opacity: 0;
+             transition:.4s;
+             background-color: #fff;
+             padding:15px;
+             font-family:黑体;
+          }
+          .product img{
+            width: 100%;
+          }
 
-
+          .follow{
+             width: 30px;
+             height: 30px;
+             background-color: #fbfd5c;
+             position: absolute;
+             border-radius: 50%;
+             box-shadow: 0px 0px 30px #fbfd5c;
+          }
+          .follow div{
+            width: 12px;
+            height: 12px;
+            background-color: #60fee9;
+            position: absolute;
+            top:31px;
+            left:7px;
+            border-radius: 50%;
+            box-shadow: 0 0 15px #60fee9;
+          }
 	</style>
 </head>
 <body>
@@ -85,5 +122,69 @@
   </div>
     </div>
   </div>
+
+  <div class="product">
+       <p>这是一个关于北京鸿世通会展的首页网站，包含了轮播图，下拉菜单，衔接动画等全面的用户体验</p>
+       <img src="images/img1.jpg">
+  </div>
+  <div class="product">
+       <p>仿作京东购物网站的官网，功能全面，内容多样，主要利用的js制作了动态效果</p>
+       <img src="images/img2.jpg">
+  </div>
+  <div class="product">
+       <p>这是一张仿作vivo官网，轮播图特效美观，向用户展示了各种各样的vivo手机</p>
+       <img src="images/img3.jpg">
+  </div>
+  <div class="product">
+       <p>这利用了bootstrap响应式布局制作的一张外国网站，可以使用手机观看</p>
+       <img src="images/img4.jpg">
+  </div>
+
+  <div class="follow">
+       <div></div>
+  </div>
+
+  <script>
+
+     var col=document.querySelectorAll(".col-sm-6");
+     var pro=document.querySelectorAll(".product");
+     console.log(pro);
+     for(var i=0;i<pro.length;i++){
+            col[i].index=i;
+            col[i].onmouseover=function(){
+                    for(var j=0;j<pro.length;j++){
+                            pro[j].style.opacity="0";
+                            if(col[j]==this){
+                              
+                                pro[j].style.opacity="1";
+                            }
+                    }
+            }
+            col[i].onmouseout=function(){
+               for(var j=0;j<pro.length;j++){
+                            if(col[j]==this){
+                              
+                                pro[j].style.opacity="0";
+                            }
+                    }
+            }
+     }
+
+     var follow=document.querySelector(".follow");
+     var body=document.body;
+     console.log(body);
+
+
+     body.onmousemove=function(e){
+          e=e||event;
+          var x=e.clientX;
+          var y=e.clientY;
+          console.log(x);
+          follow.style.top=y+73+"px";
+          follow.style.left=x+7+"px";
+          
+     }
+
+  </script>
 </body>
 </html>

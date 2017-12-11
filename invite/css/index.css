@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+      font-weight:bold;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      /*-webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;*/
+    }
+    .swiper-slide{
+      background:url("../images/bgc.jpg");
+      background-size:cover;
+      color:#fff;
+      }
+      .swiper-slide h1{
+        padding-top: 365px;
+        padding-bottom: 105px;
+        font-size: 56px;
+        transition: all 1.5s;
+        font-weight: bold;
+      }
+
+      .swiper-slide .bgc{
+        width: 409px;
+        height:409px;
+        background-color:red;
+        background:url(../images/border.png);
+        background-position: -115px -300px;
+        margin:0 auto;
+        position: relative;
+        left: 0;
+        transition:all 1.8s;
+
+      }
+      .swiper-slide .container .bgc .img{
+         width: 90%;
+         padding-top: 25px;
+         transition :all 1.8s;
+      }
+       .swiper-slide .container .bgc .img1{
+        width: 90%;
+        position: absolute;
+        top:90px;
+        left: 25px;
+        z-index: 99;
+        transform: rotate(0deg);
+        transition:all 1.8s;
+       }
+       h3{
+        font-size:46px;
+        padding-top: 230px;
+        transition:all 1.2s;
+       }
+       p{
+        font-size: 32px;
+        padding-top: 55px;
+       }
+       p span{
+        padding-top: 30px;
+        font-size:40px;
+       }
+       p .pan1{
+         position:absolute;
+        left:40%;
+        transition: 1s;
+       }
+       p .pan2{
+         position:absolute;
+        right:40%;
+        transition:1s;
+       }
+.swiper-slide .main{
+    width: 95%;
+    height: 95%;
+    margin:auto;
+    background:rgba(255,59,59,0.7);
+    padding:0 85px;
+}
+.swiper-slide .main h2{
+    font-size:46px;
+    padding-top: 120px;
+}
+.swiper-slide .main s{
+   width: 50px;
+    height: 3px;
+    background-color:#fff;
+}
+.swiper-slide .main p{
+    font-size:40px;
+    padding-top: 70px;
+    line-height: 65px;
+}
+.swiper-slide .col-xs-4{
+    border:8px solid #fff;
+}
+
+.swiper-slide .col-xs-8 p{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.swiper-slide .col-xs-8 h4{
+    padding-left: 20px;
+    font-size:44px;
+}
+.swiper-slide .container .row{
+    padding-bottom: 45px;
+}

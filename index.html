@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>王成功的项目展示页</title>
 
 	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<style>
@@ -228,6 +228,14 @@
        h1.style.marginTop="40px";
      }
      move();
+      
+      function tit(){
+          var title=document.title;
+          var first=title.charAt(0);
+          var right=title.substring(1,title.length);
+          document.title=right+first;
+      }
+      setInterval(tit,300);
   </script>
 </body>
 </html>

@@ -1,0 +1,268 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    transition:all 0.5s;
+}
+li{
+    list-style:none;
+}
+.clear{
+    clear:both;
+}
+
+
+#wraper{
+    width: 10rem;
+    margin:auto;
+}
+header{
+    width: 10rem;
+    height: 1.85rem;
+    background:#fff;
+}
+header nav{
+    float: left;
+}
+header nav .logo{
+    width: 3.8rem;
+    padding:0.09rem 0.09rem;
+}
+header nav .logo img{
+    width: 3.8rem;
+}
+header .n-btn{
+    width: 1rem;
+    height: 1rem;
+    background-color:#e6e6e6;
+    float: right;
+    margin-right: 1rem;
+    margin-top: 0.4rem;
+    border-radius:6px;
+}
+header .n-btn div{
+    width: 0.75rem;
+    height: 0.09rem;
+    margin:auto;
+    background-color: #fff;
+    margin-top: 0.19rem;
+}
+.nav-list{
+    width: 10rem;
+    background-color: #000;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition:.4s;
+    position: absolute;
+    z-index: 999;
+}
+.nav-list li{
+    padding-top:0.15rem;
+    font-size:0.4rem;
+    border-bottom: 0.03rem solid #fff;
+}
+.nav-list li:last-child{
+    border-bottom: none;
+}
+.nav-list a{
+    color:#fff;
+}
+.banner{
+    width: 10rem;
+    height: 4rem;
+    position:relative;
+}
+.banner .box div{
+
+    opacity:0;
+    position: absolute; 
+    transition:all .5s linear;
+}
+.banner img{
+    width: 10rem;
+    height: 4rem;
+}
+.banner .box .li1{
+    opacity: 1;
+}
+.banner ul{
+    position:absolute;
+    top:0;
+    left:47%;
+    top:90%;
+}
+.banner ul li{
+    width: 0.3rem;
+    height: 0.3rem;
+    float: left;
+    background-color:#e6e6e6;
+    border-radius: 50%;
+    margin-left: 0.1rem;
+    border:0.03rem solid #fff;
+}
+.banner ul .on{
+    background-color:red;
+}
+.aboutus{
+    text-align: center;
+    padding:0 0.4rem;
+}
+h1{ 
+    padding-top: 0.3rem;
+    font-size:0.4rem;
+}
+.aboutus p{
+    text-align: left;
+    margin-top: 0.1rem;
+}
+.aboutus a{
+    display: block;
+    border:0.03rem solid #000;
+    margin: 0.2rem;
+    padding:0.2rem 0;
+    font-size:0.35rem;
+    color:#000;
+}
+.aboutus a:hover{
+    background-color:#fc4545;
+    color:#fff;
+}
+
+.b-img{
+    width: 9.5rem;
+    height: 4rem;
+    background-color:gray;
+    margin:auto;
+    background:url(../images/bimg.jpg) no-repeat;
+    background-size:100% 100%;
+    position:relative;
+}
+.b-img .product{
+    position:absolute;
+    width: 4.5rem;
+    background-color:#b92825;
+    top:0.5rem;
+    margin-left: 4.5rem;
+    color:#fff;
+    font-size:0.3rem;
+    padding:0.4rem;
+}
+.product-center{
+    width: 10rem;
+    text-align: center;
+    margin-top: 0.2rem;
+}
+.product-center h2{
+    font-size:0.3rem;
+}
+.product-center h3{
+    font-size:0.25rem;
+    color:red;
+}
+.product-center ul li{
+    width: 4.9rem;
+    height: 2.5rem;
+    margin-top: 0.2rem;
+    position:relative;
+}
+.product-center ul li img{
+    width: 4.9rem;
+    height: 2.1rem;
+}
+.product-center ul li div{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0);
+     transition:all 0.3s;
+}
+.product-center ul li:hover div{
+    background:rgba(0,0,0,0.7);
+}
+.product-center ul{
+    width: 4.5rem;
+    float: left;
+}
+.product-center ul:last-child{
+    margin-left: 0.6rem;
+}
+.more{
+    display: block;
+    border:0.03rem solid #000;
+    margin: 0.2rem;
+    padding:0.2rem 0;
+    font-size:0.35rem;
+    color:#000;
+    text-align: center;
+}
+.more:hover{
+    background-color: #fc4545;
+    color:#fff;
+}
+
+.advantage{
+    width: 10rem;
+    text-align: center;
+}
+.advantage h2{
+    font-size:0.4rem;
+}
+.advantage h3{
+    color:red;
+    padding-bottom: 0.4rem;
+}
+.advantage-text{
+    width: 10rem;
+}
+.advantage-text ul li{
+    width: 5rem;
+    height: 5rem;
+    background-color:yellow;
+    float: left;
+    padding:0.5rem;
+    background-color:#4e4c4c;
+    color:#fff;
+}
+
+.news{
+    width: 10rem;
+    text-align: center;
+}
+.news h2{
+    font-size:0.4rem;
+    padding-top: 0.5rem;
+}
+.news h3{
+     font-size:0.25rem;
+    color:red;
+}
+.news ul li{
+    text-align: left;
+    padding-top: 0.3rem;
+    font-size:0.32rem;
+    border-bottom: 0.03rem dashed #000;
+    padding-bottom: 0.1rem;
+}
+.news ul li a{
+    color:#000;
+}
+footer{
+    width: 10rem;
+    background-color:#000;
+    text-align:center;
+    color:#fff;
+    padding:0.5rem;
+}
+footer h2{
+    font-size:0.4rem;
+}
+.back-top{
+    position:fixed;
+    top:85%;
+    left:95%;
+}

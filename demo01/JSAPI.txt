@@ -1,0 +1,36 @@
+数组的API
+//数组转化为字符串
+     var arr=[1,2,3,4,5];
+     var str=String(arr);
+     console.log(str);
+     console.log(typeof(str));
+
+拼接
+var arr=["h","e","l","l","o"];
+     var str=arr.join("连接符");连接符省略时默认为string
+     var strs=String(arr);
+     console.log(str);
+     console.log(strs);
+  var str=arr.join("");把单词拼接为句子
+  arr.join==""判断空数组
+
+concat也是拼接但无法修改元数组，只能返回一个新数组。
+concat 拼接
+     // var arr=[1,2,3,4,5];
+     // var str=arr.concat("a","b","c");
+     // console.log(arr);
+     // console.log(str);
+splice表示删除，插入，替换
+删除
+var arr=str.splice(starti,n)
+
+插入
+var str=arr.splice(starti,0,"值1","值2")
+
+替换
+var str=arr.splice(strti,n,"值1"，"值2");
+删掉的数和插入的数字个数必须相等
+
+栈和队列
+栈：一端封闭，只能从一端进出的数组 FILO:first in last out
+队列；一端进，从另一端出arr.push();

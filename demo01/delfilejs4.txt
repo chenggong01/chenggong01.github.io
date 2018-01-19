@@ -1,0 +1,82 @@
+逻辑运算符:返回值是一个布尔类型
+    逻辑与 && 两个条件同时判断
+    逻辑或 || 两个条件同时判断
+    逻辑非 ! 
+ 
+   输入一个数字，判断是否在0-10之间
+   var wrt=prompt("请输入一个数字");
+   var result=wrt>=0&&wrt<=10;
+   alert(result);
+
+   机试和笔试都达到60分才合格
+    var test1=prompt("输入机试成绩");
+     var test2=prompt("输入笔试成绩");
+     var result1=test1>=60&&test2>=60;
+     alert(result1);
+
+    逻辑与:只要有一个为false，整个表达式就为false
+    逻辑或：只要有一个为true，那么整个表达式为true
+    逻辑非：能够取反
+    isNaN:判断一个数是否为非数字；是，不是一个数肯定
+    不是一个数字会返回true
+    是一个数字会返回false；
+    var a="m";
+     document.write(isNaN(a));   true
+      
+    var b=12345;
+    alert(isNaN(b));  false
+
+    分支结构
+       顺序结构
+       选择结构
+       循环结构
+   
+       选择结构：if(条件){要执行的代码} 条件为true时才能够执行
+
+       输入会员卡积分，如果>=1000分为金牌会员
+
+       循环结构if(条件){代码1}else{代码2}
+
+          var score=prompt("请输入您的会员积分");
+     if(score>=1000){
+     	alert("恭喜您成为了金牌会员");
+     }else{
+     	alert("您是银牌会员");
+     };
+
+     else..if 多条件判断语句
+     if(条件1){
+        执行语句
+}else if（）{
+
+}
+  
+      var score=prompt("输入您的考试分数");
+     if(score>=90){
+     	alert("马尔代夫三日游");
+     }else if(score>=80){
+     	alert("国内三日游");
+     }else if(score>=70){
+     	alert("沧州三日游");
+     }else if(score>=60){
+     	alert("在家面壁思过");
+     }else{
+     	alert("两大嘴巴子");
+     };
+
+    switch.....case case:情况1
+    结构：switch(){
+          case 1:
+          要执行的代码 
+          break；
+
+          case 2:
+          要执行的代码 
+          break；
+
+          case 2:
+          要执行的代码 
+          break
+
+         default:要执行的代码; 默认值
+}

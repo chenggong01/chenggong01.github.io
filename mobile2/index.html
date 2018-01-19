@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>build</title>
+    
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="wraper">
+         <header>
+            <nav>
+                <div class="logo">
+                     <a href="#"><img src="images/logo.png" alt=""></a>
+                </div>
+            </nav>
+            <div class="n-btn">
+                 <div></div>
+                 <div></div>
+                 <div></div>
+            </div>
+         </header>
+         <div class="clear"></div>
+         <div class="nav-list">
+         <ul>
+             <li><a href="#">首页</a></li>
+             <li><a href="#">关于我们</a></li>
+             <li><a href="#">产品中心</a></li>
+             <li><a href="#">团队介绍</a></li>
+             <li><a href="#">新闻动态</a></li>
+             <li><a href="#">联系我们</a></li>
+         </ul>
+        </div>
+        
+<!--        banner部分-->
+        <div class="banner">
+             <div class="box">
+                  <div class="li1"><img src="images/banner1.jpg" alt=""></div>
+                  <div><img src="images/banner2.jpg" alt=""></div>
+             </div>
+             <ul>
+                 <li class="on"></li>
+                 <li></li>
+             </ul>
+        </div>
+        
+<!--        关于我们-->
+        <div class="aboutus">
+             <h1><b>关于我们</b></h1>
+             <h3>Abuout us</h3>
+             <p>某某房地产（集团）股份有限公司成立于1992年，是中国XX集团控股的大型国有房地产企业，也是中国XX集团房地产业务的主要运作平台，国家一级房地产开发资质企业，国有房地产企业综合实力榜首。</p>
+             <p>某某房地产（集团）股份有限公司成立于1992年，是中国XX集团控股的大型国有房地产企业，也是中国XX集团房地产业务的主要运作平台，国家一级房地产开发资质企业，国有房地产企业综合实力榜首。</p>
+            <a href="#"><h2>MORE +</h2></a>
+        </div>
+        
+<!--        背景图+介绍-->
+        <div class="b-img">
+             <div class="product">
+                  <p>
+                      我们给每一个家赋予它独有的意义，选择我们，爱上家的感觉，你的满意是我们最大的愿望……
+                  </p>
+             </div>
+        </div>
+        
+<!--        产品中心-->
+        <div class="product-center">
+             <h2><b>产品中心</b></h2>
+             <h3>Product</h3>
+             <ul>
+                <li>
+                    <a href="#"><img src="images/shop1.jpg" alt="">
+                    <div></div>
+                    </a>
+                    <p>某某商品</p>
+                </li>
+                <li><a href="#"><img src="images/shop2.jpg" alt=""><div></div></a><p>某某商品</p></li>
+                <li><a href="#"><img src="images/shop3.jpg" alt=""><div></div></a><p>某某商品</p></li>
+             </ul>
+             <ul>
+                 <my-li v-for="list in lists" v-bind="list"></my-li>
+             </ul>
+             
+        </div>
+        <div class="clear"></div>
+        <a href="#" class="more"><h2>MORE +</h2></a>
+        
+        <div class="advantage">
+         <h2><b>产品优势</b></h2>
+         <h3>OUR ADVANTAGE</h3>
+         <div class="advantage-text">
+              <ul>
+                  <li>
+                      <img src="images/png1.png" alt="">
+                      <div>
+                          <p>专业一对一服务 一对一即时咨询服务，专业领域顾问，至少二年以上从业经验</p>
+                      </div>
+                  </li>
+                  <li>
+                     <img src="images/png2.png" alt="">
+                      <div>
+                          <p>严控风险 安全保障 严格把控业务办理风险，保障办理过程安全顺利、平稳进行训</p>
+                      </div> 
+                  </li>
+                  <li>
+                      <img src="images/png3.png" alt="">
+                      <div>
+                          <p>程化透明操作 服务产品化定制规范，全程可监控、可追溯、业务进度实时跟进</p>
+                      </div> 
+                  </li>
+                  <li>
+                      <img src="images/png4.png" alt="">
+                      <div>
+                          <p>一站式企业服务 涵盖企业初创期、成长期、成熟期，满足各类不同业务办理需求
+                          新闻动态</p>
+                      </div> 
+                  </li>
+              </ul>
+         </div>
+      </div>
+      <div class="clear"></div>
+      <div class="news">
+           <h2><b>最新动态</b></h2>
+           <h3>NEWS</h3>
+           <div class="newlist">
+                <ul>
+                   <new-li v-for="list in lists" v-bind="list"></new-li> 
+                </ul>
+           </div>
+           
+      </div>
+      <a href="#" class="more"><h2>MORE +</h2></a>
+      
+      <footer>
+          <h2>联系我们</h2>
+          <h3>CONTACT ME</h3>
+          <p>联系电话：400-000-0000</p>
+          <p>企业邮箱：123@qq.com</p>
+          <p>公司地址：xx省xx市xx区xx路xx号</p>
+          <p>Copyright © 20015-2016,www.xxxxx.com, All rights reserved 版权所有 © 未经许可 严禁复制</p>
+      </footer>
+    </div>
+    <div class="back-top">
+         <img src="images/top.jpg" alt="" class="top-img">
+    </div>
+    
+    <script src="js/vue.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

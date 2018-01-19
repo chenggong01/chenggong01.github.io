@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>王成功的项目展示页</title>
 
 	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -30,8 +31,11 @@
              text-align: center;
              overflow: hidden;
            }
+        .col-sm-6 img{
+            transition: 0.3s;
+        }
            .col-sm-6 img:hover {
-                  transition:.3s;
+                  
                   transform: scale(1.2,1.2);
            }
           
@@ -150,7 +154,56 @@
       </div>
     </div>
   </div>
+
     </div>
+  </div>
+  
+  <div class="container">
+       <div class="row">
+           <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="images/mbl.jpg" style="width:100%; height:170px;">
+      <div class="caption">
+        <h3>手机端页面1【企业】</h3>
+        <p>手机端项目</p>
+        <p><a href="mobile2/index.html" class="btn btn-primary" role="button">浏览这个项目</a></p>
+      </div>
+    </div>
+  </div>
+     
+     <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="images/tb.jpg" style="width:100%; height:170px;">
+      <div class="caption">
+        <h3>手机端页面2【淘宝网触屏版】</h3>
+        <p>手机端项目</p>
+        <p><a href="tao/index.html" class="btn btn-primary" role="button">浏览这个项目</a></p>
+      </div>
+    </div>
+  </div>
+    
+     <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="images/qz.png" style="width:100%; height:170px;">
+      <div class="caption">
+        <h3>PHP+sql制作qq空间留言板</h3>
+        <p>php后台项目</p>
+        <p><a href="zoneajax/zone.php" class="btn btn-primary" role="button">浏览这个项目(需要运行环境和数据库表)</a></p>
+      </div>
+    </div>
+  </div>
+     
+     <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="images/file.png" style="width:100%; height:170px;">
+      <div class="caption">
+        <h3>PHP文件处理上传与下载与用户注册登录系统</h3>
+        <p>php后台项目</p>
+        <p><a href="demo01/index.php" class="btn btn-primary" role="button">浏览这个项目(需要运行环境和数据库表)</a></p>
+      </div>
+    </div>
+  </div>
+      </div>
   </div>
 
   <div class="product">
@@ -177,9 +230,21 @@
        <p>一张交互效果比较全面的英雄联盟官网！</p>
        <img src="images/imgl.png">
   </div>
-
-  <div class="follow">
-       <div></div>
+  <div class="product">
+       <p>利用flexble制作的一张单纯适应手机端的页面</p>
+       <img src="images/mbl.jpg">
+  </div>
+  <div class="product">
+       <p>利用flexble以及swiper框架仿作的淘宝手机端触屏页面</p>
+       <img src="images/tb.jpg">
+  </div>
+  <div class="product">
+       <p>php和数据库制作的留言板动态网页</p>
+       <img src="images/qz.png">
+  </div>
+  <div class="product">
+       <p>php文件上传预下载系统以及用户的账号与注册</p>
+       <img src="images/file.png">
   </div>
 
   <script>
@@ -213,21 +278,21 @@
      console.log(body);
 
      //跟随的小灯泡
-     body.onmousemove=function(e){
-          e=e||event;
-          var x=e.clientX;
-          var y=e.clientY;
-          follow.style.top=y+"px";
-          follow.style.left=x+"px";
-          
-     }
-
-     function move(){
-       var h1=document.querySelector("h1");
-       h1.style.opacity="1";
-       h1.style.marginTop="40px";
-     }
-     move();
+//     body.onmousemove=function(e){
+//          e=e||event;
+//          var x=e.clientX;
+//          var y=e.clientY;
+//          follow.style.top=y+"px";
+//          follow.style.left=x+"px";
+//          
+//     }
+//
+//     function move(){
+//       var h1=document.querySelector("h1");
+//       h1.style.opacity="1";
+//       h1.style.marginTop="40px";
+//     }
+//     move();
       
       function tit(){
           var title=document.title;
